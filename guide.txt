@@ -1,0 +1,14 @@
+HOW TO
+
+1. To run this script, make sure you in same directory with delete-artifacts.sh file
+2. Make sure *.sh script executable. Using this command :
+	chmod +x delete-artifacts.sh
+
+3. Run this script by using this command :
+	./delete-artifacts.sh -u [YOUR_ARTIFACTORY_USERNAME] -p [YOUR_ARTIFACTORY_PASSWORD] -l [YOUR_ARTIFACTORY_URL] -r [YOUR_REPOSITORY]
+	
+	ex :
+	./delete-artifacts.sh -u admin -p P@ssw0rd -l http://10.57.15.61:8082/artifactory -r maven-repo
+
+4. This script running as Dry run mode as default. To disable this, edit script and go to dry_run variable (line 8) and set to false
+	
