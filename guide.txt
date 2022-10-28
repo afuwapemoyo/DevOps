@@ -12,3 +12,4 @@ HOW TO
 
 4. This script running as Dry run mode as default. To disable this, edit script and go to dry_run variable (line 8) and set to false
 	
+curl -X POST -u "admin:password" -H "content-type: text/plain" -d 'items.find({"stat.downloaded":{"$before":"60s"},"repo":{"$eq":"[YOUR_REPO]"}}).include("stat.downloaded")' -s "[YOUR_ARTIFACTORY_URL]/api/search/aql"
